@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Расчет стоимости продукции</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="daikonar">
+    <link rel="stylesheet" href="assets/styles/slicknav.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/styles/tabs-style.css">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="navbar">
+            <div class="navbar_center">
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="about.html">О студии</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="calc-list.html">Расчет стоимости</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul><a class="cabinet-btn" href="cabinet.html">Личный кабинет</a>
+                <form class="search" action="#" method="get">
+                    <input class="search__input" type="text" name="words" placeholder="Поиск">
+                    <button class="search__button" type="button"></button>
+                </form>
+            </div>
+        </div>
+        <div class="logobar">
+            <div class="logobar_center">
+                <a class="logo__link" href="index.html">
+                    <img class="logo" src="assets/images/logo.png" alt="">
+                </a>
+                <a class="bascket-mini" href="bascket.html">
+                    <p class="bascket-mini__icon-wrap"><span class="bascket-mini__icon"></span>
+                    </p><span class="bascket-mini__count">31</span>
+                    <p class="bascket-mini__name">корзина</p>
+                    <p class="bascket-mini__cost"><span class="bascket-mini__cost_orange">7 590</span>руб.</p>
+                </a>
+                <div class="phone">
+                    <p class="phone__number"><span class="phone__number_orange">+7&nbsp;&nbsp;8652</span>72-47-73</p>
+                    <p class="phone__number"><span class="phone__number_orange">+7&nbsp;&nbsp;8652</span>31-53-11</p>
+                </div>
+                <img class="phone__icon" src="assets/images/phone_icon.png" alt="">
+                <button class="callback-btn" type="button">заказать звонок</button>
+                <div class="address">
+                    <img class="address__icon" src="assets/images/address_icon.png" alt="">
+                    <p class="address__txt">355042, г. Ставрополь,
+                        <br>ул. 50 лет ВЛКСМ, 24 б</p>
+                </div>
+            </div>
+        </div>
+        <div class="products-nav">
+            <div class="products-nav_center">
+                <ul class="products-nav__list">
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">визитки</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">листовки и буклеты</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">каталоги и брошюры</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">книжная продукция</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">календари</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">сувенирная продукция</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">фотоальбомы и дипломы</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">пластиковые карты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_center">
+            <div class="calc">
+                <div class="breadcrumbs"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__sep">></span><span class="breadcrumbs__cur">Расчет стоимости печати</span>
+                </div>
+                <h2 class="title-big calc__title">Расчет стоимости печати</h2>
+                <form class="calc__form" action="#" method="post">
+                    <div class="calc__tabs tabs_block">
+                        <ul class="calc__tabs-head tabs">
+                            <li class="calc__tabs-head-item active">калькулятор</li>
+                            <li class="calc__tabs-head-item">форматы</li>
+                            <li class="calc__tabs-head-item">подготовка макетов</li>
+                        </ul>
+                        <div class="calc__tabs-box box calc__tabs-box-calc visible">
+                            <div class="calc__left">
+                                <div class="calc__format">
+                                    <h3 class="title-mid">формат, мм</h3>
+                                    <img class="calc__help calc__help-format" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-format">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__standart">
+                                        <div class="radio-fill-btn">
+                                            <input type="radio" id="standart1" name="standart" />
+                                            <label for="standart1">стандартный</label>
+                                        </div>
+                                        <div class="radio-fill-btn">
+                                            <input type="radio" id="standart2" name="standart" />
+                                            <label for="standart2">нестандартный</label>
+                                        </div>
+                                    </div>
+                                    <div class="calc__flyer">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="flyer1" name="flyer" />
+                                            <label for="flyer1"><b>Листовка</b>
+                                                <br>210х99мм</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="flyer2" name="flyer" />
+                                            <label for="flyer2"><b>Листовка 2</b>
+                                                <br>210х99мм</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="flyer3" name="flyer" />
+                                            <label for="flyer3"><b>Листовка 3</b>
+                                                <br>210х99мм</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="flyer4" name="flyer" />
+                                            <label for="flyer4"><b>Листовка 4</b>
+                                                <br>210х99мм</label>
+                                        </div>
+                                    </div>
+                                    <div class="calc__size">
+                                        <p class="calc__size-title">Свой размер</p>
+                                        <input class="input calc__size-width" type="text" name="width" placeholder="Ширина" />
+                                        <input class="input calc__size-height" type="text" name="height" placeholder="Высота" />
+                                    </div>
+                                </div>
+                                <div class="calc__edition">
+                                    <h3 class="title-mid">тираж</h3>
+                                    <img class="calc__help calc__help-edition" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-edition">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__edition-radio-wrap">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition1" name="edition" />
+                                            <label for="edition1">100</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition2" name="edition" />
+                                            <label for="edition2">300</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition3" name="edition" />
+                                            <label for="edition3">500</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition4" name="edition" />
+                                            <label for="edition4">1000</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition5" name="edition" />
+                                            <label for="edition5">1500</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition6" name="edition" />
+                                            <label for="edition6">2000</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition7" name="edition" />
+                                            <label for="edition7">2500</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="edition8" name="edition" />
+                                            <label for="edition8">3000</label>
+                                        </div>
+                                        <input class="input calc__edition-input" type="text" name="edition" placeholder="Другое" />
+                                    </div>
+                                </div>
+                                <div class="calc__color">
+                                    <h3 class="title-mid">цветность</h3>
+                                    <img class="calc__help calc__help-color" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-color">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__color-radio-wrap">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="color1" name="color" />
+                                            <label for="color1"><b>4+0</b>
+                                                <br>с одной стороны</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="color2" name="color" />
+                                            <label for="color2"><b>4+4</b>
+                                                <br>с двух сторон</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__paper">
+                                    <h3 class="title-mid">бумага</h3>
+                                    <img class="calc__help calc__help-paper" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-paper">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__paper-wrap">
+                                        <div class="calc__paper-type scroll-pane" id="pane">
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type1" name="paper-type" />
+                                                <label for="paper-type1">Мелованная бумага</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type2" name="paper-type" />
+                                                <label for="paper-type2">Color Copy Clear</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type3" name="paper-type" />
+                                                <label for="paper-type3">Самоклеющаяся бумага</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type4" name="paper-type" />
+                                                <label for="paper-type4">Лен</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type5" name="paper-type" />
+                                                <label for="paper-type5">Sirio</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type6" name="paper-type" />
+                                                <label for="paper-type6">Touche Cover</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type7" name="paper-type" />
+                                                <label for="paper-type7">Калька</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type8" name="paper-type" />
+                                                <label for="paper-type8">Калька</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type9" name="paper-type" />
+                                                <label for="paper-type9">Калька</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type10" name="paper-type" />
+                                                <label for="paper-type10">Калька</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="paper-type11" name="paper-type" />
+                                                <label for="paper-type11">Калька</label>
+                                            </div>
+                                        </div>
+                                        <div class="calc__paper-density">
+                                            <h4 class="title-small calc__paper-density-title">Плотность</h4>
+                                            <div class="calc__paper-density-list-wrap">
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density1" name="paper-density" />
+                                                    <label for="paper-density1">120</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density2" name="paper-density" />
+                                                    <label for="paper-density2">130</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density3" name="paper-density" />
+                                                    <label for="paper-density3">140</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density4" name="paper-density" />
+                                                    <label for="paper-density4">150</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density5" name="paper-density" />
+                                                    <label for="paper-density5">160</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density6" name="paper-density" />
+                                                    <label for="paper-density6">170</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density7" name="paper-density" />
+                                                    <label for="paper-density7">180</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density8" name="paper-density" />
+                                                    <label for="paper-density8">190</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density9" name="paper-density" />
+                                                    <label for="paper-density9">200</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density10" name="paper-density" />
+                                                    <label for="paper-density10">210</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density11" name="paper-density" />
+                                                    <label for="paper-density11">220</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density12" name="paper-density" />
+                                                    <label for="paper-density12">230</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density13" name="paper-density" />
+                                                    <label for="paper-density13">240</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density14" name="paper-density" />
+                                                    <label for="paper-density14">250</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density15" name="paper-density" />
+                                                    <label for="paper-density15">260</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density16" name="paper-density" />
+                                                    <label for="paper-density16">270</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density17" name="paper-density" />
+                                                    <label for="paper-density17">280</label>
+                                                </div>
+                                                <div class="radio-btn">
+                                                    <input type="radio" id="paper-density18" name="paper-density" />
+                                                    <label for="paper-density18">290</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__perforation">
+                                    <h3 class="title-mid">перфорация</h3>
+                                    <img class="calc__help calc__help-perforation" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-perforation">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__perforation-radio-wrap">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="perforation1" name="perforation" />
+                                            <label for="perforation1">нет</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="perforation2" name="perforation" />
+                                            <label for="perforation2">1 линия</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="perforation3" name="perforation" />
+                                            <label for="perforation3">2 линии</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__number">
+                                    <h3 class="title-mid">нумерация</h3>
+                                    <img class="calc__help calc__help-number" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-number">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__number-radio-wrap">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="number1" name="number" />
+                                            <label for="number1">нет</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="number2" name="number" />
+                                            <label for="number2">1 номер</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="number3" name="number" />
+                                            <label for="number3">2 номера</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="number4" name="number" />
+                                            <label for="number4">3 номера</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__lamination">
+                                    <h3 class="title-mid">ламинация</h3>
+                                    <img class="calc__help calc__help-lamination" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-lamination">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__lamination-radio-wrap">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="lamination1" name="lamination" />
+                                            <label for="lamination1">нет</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="lamination2" name="lamination" />
+                                            <label for="lamination2">Глянцевая</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="lamination3" name="lamination" />
+                                            <label for="lamination3">Матовая</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="lamination4" name="lamination" />
+                                            <label for="lamination4">Slik Feel</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__thickness">
+                                    <h3 class="title-mid">толщина</h3>
+                                    <img class="calc__help calc__help-thickness" src="assets/images/help_icon.png">
+                                    <div class="calc__help-popup calc__help-popup-thickness">
+                                        <img class="calc__help-popup-pointer" src="assets/images/help_popup_pointer.png">
+                                        <p class="calc__help-popup-txt">Формат указан по формуле «Ширина х Высота». Формат указан итоговый — обрезной. Формат файла вашего макета должен минимум на 2 мм по каждой из сторон превышать формат итоговый, т.е. он должен быть дообрезным. Таким
+                                            образом, если нужна визитка форматом 90х50 мм, то формат файла должен быть минимум 94х54 мм. Подробнее о допечатной подготовке — в документе «Требования к файлам»</p>
+                                    </div>
+                                    <div class="calc__thickness-radio-wrap">
+                                        <div class="radio-btn">
+                                            <input type="radio" id="thickness1" name="thickness" />
+                                            <label for="thickness1">120</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="thickness2" name="thickness" />
+                                            <label for="thickness2">130</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="thickness3" name="thickness" />
+                                            <label for="thickness3">140</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="thickness4" name="thickness" />
+                                            <label for="thickness4">150</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="thickness5" name="thickness" />
+                                            <label for="thickness5">160</label>
+                                        </div>
+                                        <div class="radio-btn">
+                                            <input type="radio" id="thickness6" name="thickness" />
+                                            <label for="thickness6">170</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__right">
+                                <h3 class="title-mid">ваш заказ</h3>
+                                <div class="calc__right-info">
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Изделие:</span><span class="calc__right-info-value">Листовка</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Формат:</span><span class="calc__right-info-value">210х99мм</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Количество на листе:</span><span class="calc__right-info-value">4 экземпляра</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Тираж:</span><span class="calc__right-info-value">100</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Бумага:</span><span class="calc__right-info-value">Мелованная бумага 120 г/м3</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Цветность:</span><span class="calc__right-info-value">4+0 с одной стороны</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Перфорация:</span><span class="calc__right-info-value">Нет</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Нумерация:</span><span class="calc__right-info-value">Нет</span>
+                                    </p>
+                                    <p class="calc__right-info-item"><span class="calc__right-info-title">Ламинация:</span><span class="calc__right-info-value">Нет</span>
+                                    </p>
+                                </div>
+                                <div class="calc__right-cost">
+                                    <p class="calc__right-cost-one"><span class="calc__right-cost-one-title">Цена за экземпляр:</span><span class="calc__right-cost-one-value">16,35 Р.</span>
+                                    </p>
+                                    <p class="calc__right-cost-all"><span class="calc__right-cost-all-title">Стоимость заказа:</span><span class="calc__right-cost-all-value">1635.00 Р.</span>
+                                    </p>
+                                </div>
+                                <div class="calc__right-upload"><span class="calc__upload-status" id="file-name">Файл не выбран</span>
+                                    <label class="calc__upload-btn">
+                                        <input name="file" type="file" onchange="getFileName();" id="uploaded-file"><span>Загрузить свой макет</span>
+                                    </label>
+                                </div>
+                                <p class="calc__right-time">Примерный срок изготовления составит 3 часа</p>
+                                <button class="orange-btn calc__right-order-btn" type="button">Заказать</button>
+                                <button class="more-btn calc__right-cancel-btn" type="button">сбросить</button>
+                                <p class="calc__right-desc">Онлайн калькулятор позволяет рассчитать стоимость печати листовок, флаеров, плакатов, обложек для дисков, наклеек, и другой полиграфической продукции, которая имеет листовой формат размером от А3 и меньше.</p>
+                            </div>
+                        </div>
+                        <div class="calc__tabs-box box">
+                            <div class="format">
+                                <p class="format__title">Визитки 55х90 мм</p>
+                                <img class="format__img" src="assets/images/formats/1.jpg" />
+                                <p class="format__cost">от 200.00 Р.</p>
+                            </div>
+                            <div class="format">
+                                <p class="format__title">Визитки 55х90 мм</p>
+                                <img class="format__img" src="assets/images/formats/1.jpg" />
+                                <p class="format__cost">от 200.00 Р.</p>
+                            </div>
+                            <div class="format">
+                                <p class="format__title">Визитки 55х85 мм (ЕВРО)</p>
+                                <img class="format__img" src="assets/images/formats/1.jpg" />
+                                <p class="format__cost">от 200.00 Р.</p>
+                            </div>
+                            <div class="format">
+                                <p class="format__title">Визитки 55х85 мм (ЕВРО)</p>
+                                <img class="format__img" src="assets/images/formats/1.jpg" />
+                                <p class="format__cost">от 200.00 Р.</p>
+                            </div>
+                            <div class="format">
+                                <p class="format__title">Визитки 55х90 мм</p>
+                                <img class="format__img" src="assets/images/formats/1.jpg" />
+                                <p class="format__cost">от 200.00 Р.</p>
+                            </div>
+                            <div class="format">
+                                <p class="format__title">Визитки 55х90 мм</p>
+                                <img class="format__img" src="assets/images/formats/1.jpg" />
+                                <p class="format__cost">от 200.00 Р.</p>
+                            </div>
+                        </div>
+                        <div class="calc__tabs-box box">
+                            <div class="calc__maket">
+                                <p class="calc__maket-txt_bold">Особенности, которые необходимо учитывать при подготовке макета.</p>
+                                <p class="calc__maket-title">ФОРМАТ</p>
+                                <p class="calc__maket-txt">Стандартный формат печатного листа (SRA3) 320x450 мм, максимальный размер запечатываемого поля 314х444 мм.</p>
+                                <p class="calc__maket-txt">Максимально возможный формат печатного листа 330х480 мм (используется очень редко!), максимальный размер запечатываемого поля 324х474 мм.</p>
+                                <p class="calc__maket-title">ЭЛЕКТРОННЫЕ НОСИТЕЛИ</p>
+                                <p class="calc__maket-txt">Макеты принимаются по электронной почте op-t@mail.ru или в офисе на USB-накопителях или CD/DVD дисках. Кроме макетов в печать, на носителях не должно быть никакой информации.</p>
+                                <p class="calc__maket-title">ОПИСАНИЕ ЗАКАЗА</p>
+                                <p class="calc__maket-txt">Заказ описывается подробно, с указанием имени файла (если их несколько), размера, цветности, количества, типа бумаги, дополнительных работ (послепечатной обработки) и сроков, а так же контактной информации для связи в случае
+                                    возникновения вопросов.</p>
+                                <p class="calc__maket-txt_bold">Например:</p>
+                                <p class="calc__maket-txt">"Визитки 90х50 мм, 4+4, 100 шт, бумага мелованная 300 грамм, ламинирование 150 mic, скругление 4 углов, завтра к 16-00. Тел.: ..."</p>
+                                <p class="calc__maket-txt">Если у Вас срочный заказ, напишите в теме письма "СРОЧНО", чтобы мы быстрее обратили на него внимание.</p>
+                                <p class="calc__maket-title">ВЕРСТКА</p>
+                                <p class="calc__maket-txt">Располагайте макет по центру листа. Размер монтажной области должен быть равен обрезному формату макета + по 2 мм со всех сторон. Оборот кладите на следующий лист, а не рядом с лицом.</p>
+                                <p class="calc__maket-title">"ВЫЛЕТ ПОД ОБРЕЗ"</p>
+                                <p class="calc__maket-txt">Если какой-либо элемент верстки подходит к краю ближе, чем на 3 мм, то он должен быть выпущен за обрез ("вылет под обрез"). Вынос за обрезной формат должен быть 2 мм, для многостраничных изданий – 3 мм.</p>
+                                <p class="calc__maket-title">ШРИФТ</p>
+                                <p class="calc__maket-txt">Перед отправкой макета, пожалуйста, убедитесь, что все шрифты переведены в "кривые". Хорошо читаемым текст получается обычно не менее 6pt. Технически возможно напечатать текст и меньшего размера - перед печатью лучше проконсультируйтесь
+                                    с нами.</p>
+                                <p class="calc__maket-title">ЦВЕТ</p>
+                                <p class="calc__maket-txt">В векторных макетах черный цвет ЧИСТЫЙ C-M-Y-K: 0-0-0-100. Для растровых макетов составной цвет суммарно не более 320%. Рекомендуем для верстки и просмотра использовать модель CMYK - U.S. Web Coated (SWOP) v2.</p>
+                                <p class="calc__maket-title">РАЗРЕШЕНИЕ</p>
+                                <p class="calc__maket-txt_bold">Для растровых макетов и рисунков внутри векторных макетов:</p>
+                                <ul class="calc__maket-list">
+                                    <li class="calc__maket-list-item">разрешение должно составлять 300 dpi (точек на дюйм)</li>
+                                    <li class="calc__maket-list-item">масштаб 100%!</li>
+                                    <li class="calc__maket-list-item">векторные эффекты теней и т.п. должны быть растрированы!</li>
+                                </ul>
+                                <p class="calc__maket-title">ФОЛЬГИРОВАНИЕ</p>
+                                <p class="calc__maket-txt">Макеты принимаются только в формате .cdr, шрифты в кривых. Все элементы под фольгирование должны быть100% Black (C-M-Y-K: 0-0-0-100). Минимальная толщина линий любых элементов должна быть не менее 0,2 мм.</p>
+                                <p class="calc__maket-title">ПАРАМЕТРЫ ФАЙЛОВ ДЛЯ СОХРАНЕНИЯ</p>
+                                <p class="calc__maket-txt"><span class="calc__maket-txt_bold">Photoshop</span> - расширение или формат: *.TIFF, *.PSD, *.JPEG - модель CMYK, слои слиты, 300 dpi.</p>
+                                <p class="calc__maket-txt"><span class="calc__maket-txt_bold">CorelDraw</span> - версия программы X5 и ниже, расширение или формат: .cdr</p>
+                                <p class="calc__maket-txt"><span class="calc__maket-txt_bold">Illustrator и InDesign</span> - PDF - без сжатия, шрифты в кривых.</p>
+                                <p class="calc__maket-title">MICROSOFT OFFICE</p>
+                                <p class="calc__maket-txt">Макеты, созданные средствами пакета Microsoft Office (Word, PowerPoint, Publisher и т.д.) - к печати не принимаются. В этих программах начиная с версии Microsoft Office 2007 есть возможность сохранить файл в формате PDF
+                                    - такой формат приемлем для печати.</p>
+                                <p class="calc__maket-example-title">ПРИМЕР ПОДГОТОВКИ МАКЕТА С НЕОБХОДИМЫМИ ОТСТУПАМИ
+                                    <br>ПОД ОБРЕЗ И РАСПОЛОЖЕНИЕМ ЭЛЕМЕНТОВ</p>
+                                <img class="calc__maket-example-img" src="assets/images/maket_example.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_center">
+            <div class="footer__item">
+                <a class="footer__logo" href="index.html">
+                    <p class="footer__logo-txt1">ТИРАЖ</p>
+                    <p class="footer__logo-txt2">Оперативная полиграфия, © 2012 — 2017</p>
+                </a>
+                <div class="footer__address">
+                    <p class="footer__address-txt1">Адрес:</p>
+                    <p class="footer__address-txt2">355042, г. Ставрополь, ул. 50 лет ВЛКСМ, 24 б</p>
+                </div>
+                <div class="footer__phone">
+                    <p class="footer__phone-txt1">Телефоны:</p>
+                    <p class="footer__phone-txt2"><span class="footer__phone-txt2_orange">+7 (8652)</span>72-11-21,&nbsp;&nbsp;72-47-73,&nbsp;&nbsp;31-53-97</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__timetable">График работы</div>
+                <div class="footer__get-order">
+                    <p class="footer__get-order-txt1">Прием заказов:</p>
+                    <p class="footer__get-order-txt2">пн.-пт.: с 9:00 до 18:00 (без перерыва)
+                        <br>сб.-вс.: выходной</p>
+                </div>
+                <div class="footer__set-order">
+                    <p class="footer__set-order-txt1">Выдача заказов:</p>
+                    <p class="footer__set-order-txt2">пн.-пт.: с 8:00 до 19:00 (без перерыва)
+                        <br>сб.: с 8:00 до 19:00 (перерыв c 13:00 до 14:00)
+                        <br>вс.: выходной</p>
+                </div>
+            </div>
+            <div class="footer__item footer__item-3">
+                <div class="footer__subs">
+                    <p class="footer__subs-title">Подпишись на новости</p>
+                    <form class="footer__subs-form" action="#" method="post">
+                        <input class="footer__subs-input" type="email" name="email" placeholder="Ваш E-mail">
+                        <button class="footer__subs-button" type="button">
+                            <img class="footer__subs-icon" src="assets/images/thick.png" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__pay">
+                    <p class="footer__pay-title">Online-оплата</p>
+                    <div class="footer__pay-icons">
+                        <a class="footer__pay-link footer__pay-visa" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/visa.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-mastercard" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/mastercard.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-yandex" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/yandex.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-sberbank" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/sberbank.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item footer__item-4">
+                <div class="footer__soc">
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/vk.png" alt="">
+                    </a>
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/fb.png" alt="">
+                    </a>
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/tw.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__note">Информация на не является публичной офертой. Указанные цены действуют только при оформлении заказа через интернет-магазин</div>
+                <div class="footer__author">Создание сайта<a class="footer__author-link" href="#">Технологии Успеха</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright_center">
+            <p class="copyright__txt">© 2017, Индивидуальный предприниматель Руденко Александр Валерьевич., ИНН 111111111, КПП 222222222, ОГРН 3333333333</p>
+        </div>
+    </div>
+    <div class="widjet"><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">Личный кабинет</div><img class="widjet__icon" src="assets/images/widjet/1.png" alt=""></a><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">В корзине 3 товара</div><img class="widjet__icon" src="assets/images/widjet/2.png" alt=""></a>
+        <a
+        class="widjet__link" href="#"><span class="widjet__elem-bg"></span>
+            <div class="widjet__hover">Калькулятор</div>
+            <img class="widjet__icon" src="assets/images/widjet/3.png" alt="">
+            </a><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">Мобильная версия</div><img class="widjet__icon" src="assets/images/widjet/4.png" alt=""></a><a class="widjet__link" href="#header"><span class="widjet__elem-bg"></span><div class="widjet__hover">Вверх</div><img class="widjet__icon" src="assets/images/widjet/5.png" alt=""></a>
+    </div>
+    <div class="popup">
+        <div class="popup__bg"></div>
+        <div class="popup__content">
+            <img class="popup__close" src="assets/images/close.png" alt="">
+            <h2 class="popup__title">Обратный звонок</h2>
+            <form class="popup__form" action="#" method="post">
+                <input class="input" type="text" name="name" placeholder="Как вас зовут?" />
+                <input class="input" type="text" name="phone" placeholder="Ваш номер телефона" />
+                <button class="orange-btn" type="button">заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/scripts/jquery-1.12.4.min.js"></script>
+    <script src="assets/scripts/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/jquery.slicknav.min.js"></script>
+    <script src="assets/scripts/jquery.bxslider.min.js"></script>
+    <script src="assets/scripts/jquery.slides.min.js"></script>
+    <script src="assets/scripts/dm-tabs.js"></script>
+    <script src="assets/scripts/jquery.mousewheel.js"></script>
+    <script src="assets/scripts/jquery.jscrollpane.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Тираж - оперативная полиграфия</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="daikonar">
+    <link rel="stylesheet" href="assets/styles/slicknav.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/styles/tabs-style.css">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="navbar">
+            <div class="navbar_center">
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="about.html">О студии</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="calc-list.html">Расчет стоимости</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul><a class="cabinet-btn" href="cabinet.html">Личный кабинет</a>
+                <form class="search" action="#" method="get">
+                    <input class="search__input" type="text" name="words" placeholder="Поиск">
+                    <button class="search__button" type="button"></button>
+                </form>
+            </div>
+        </div>
+        <div class="logobar">
+            <div class="logobar_center">
+                <a class="logo__link" href="index.html">
+                    <img class="logo" src="assets/images/logo.png" alt="">
+                </a>
+                <a class="bascket-mini" href="bascket.html">
+                    <p class="bascket-mini__icon-wrap"><span class="bascket-mini__icon"></span>
+                    </p><span class="bascket-mini__count">31</span>
+                    <p class="bascket-mini__name">корзина</p>
+                    <p class="bascket-mini__cost"><span class="bascket-mini__cost_orange">7 590</span>руб.</p>
+                </a>
+                <div class="phone">
+                    <p class="phone__number"><span class="phone__number_orange">+7&nbsp;&nbsp;8652</span>72-47-73</p>
+                    <p class="phone__number"><span class="phone__number_orange">+7&nbsp;&nbsp;8652</span>31-53-11</p>
+                </div>
+                <img class="phone__icon" src="assets/images/phone_icon.png" alt="">
+                <button class="callback-btn" type="button">заказать звонок</button>
+                <div class="address">
+                    <img class="address__icon" src="assets/images/address_icon.png" alt="">
+                    <p class="address__txt">355042, г. Ставрополь,
+                        <br>ул. 50 лет ВЛКСМ, 24 б</p>
+                </div>
+            </div>
+        </div>
+        <div class="products-nav">
+            <div class="products-nav_center">
+                <ul class="products-nav__list">
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">визитки</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">листовки и буклеты</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">каталоги и брошюры</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">книжная продукция</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">календари</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">сувенирная продукция</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">фотоальбомы и дипломы</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">пластиковые карты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider__left">
+            <div class="slider__img" style="background: url('assets/images/slider/1.jpg');">
+                <h1 class="slider__title">Печатная продукция с<br>тиснением фольгой</h1>
+                <p class="slider__txt">Такие надписи устойчивы к истиранию, поэтому
+                    <br>изделия долго сохраняют первоначальный вид.</p>
+            </div>
+            <div class="slider__img" style="background: url('assets/images/slider/example-slide-1.jpg');"></div>
+            <div class="slider__img" style="background: url('assets/images/slider/example-slide-2.jpg');"></div><i class="slider__prev slidesjs-previous slidesjs-navigation"></i><i class="slider__next slidesjs-next slidesjs-navigation"></i>
+        </div>
+        <div class="slider__right">
+            <h1 class="slider__title-right">гарантия<br>лучшей<br><span class="slider__title-right_bold">цены</span></h1>
+            <p class="slider__txt-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="products">
+        <div class="products_center">
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/1.png" alt="" />
+                </p>
+                <p class="product__name">визитки</p>
+                <p class="product__txt">Цифровая печать
+                    <br>Фольгирование и тиснение</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/2.png" alt="" />
+                </p>
+                <p class="product__name">листовки и буклеты</p>
+                <p class="product__txt">Листовки, флаера и буклеты
+                    <br>Плакаты А4 и А3</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/3.png" alt="" />
+                </p>
+                <p class="product__name">каталоги и брошюры</p>
+                <p class="product__txt">Презентационный материал
+                    <br>Ламинация, навивка пружины</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/4.png" alt="" />
+                </p>
+                <p class="product__name">книжная продукция</p>
+                <p class="product__txt">Методички, инструкции
+                    <br>Издание книг, тиражирование</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/5.png" alt="" />
+                </p>
+                <p class="product__name">календари</p>
+                <p class="product__txt">Квартальные, карманные
+                    <br>Индивидуальные календари</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/6.png" alt="" />
+                </p>
+                <p class="product__name">сувенирная продукция</p>
+                <p class="product__txt">Печать на кружках
+                    <br>Значки, магниты, ежедневники</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/7.png" alt="" />
+                </p>
+                <p class="product__name">фотоальбомы и дипломы</p>
+                <p class="product__txt">Разнообразие технологий
+                    <br>переплета продукции</p>
+            </a>
+            <a class="product" href="#">
+                <p class="product__icon-wrap">
+                    <img class="product__icon" src="assets/images/products_icon/8.png" alt="" />
+                </p>
+                <p class="product__name">пластиковые карты</p>
+                <p class="product__txt">Подарочная карта, дисконт
+                    <br>Бэджи с креплениями</p>
+            </a>
+            <button class="more-btn" type="button">Показать еще</button>
+        </div>
+    </div>
+    <div class="portfolio-home">
+        <div class="portfolio-home_center">
+            <h2 class="portfolio-home__title">портфолио</h2>
+            <ul class="portfolio-home__slider">
+                <li class="portfolio-home__slider-item">
+                    <a class="portfolio-home__slider-item-hover" data-fancybox="portfolio" href="assets/images/portfolio/1.jpg"></a>
+                    <img class="portfolio-home__slider-img" src="assets/images/portfolio/1.jpg" alt="">
+                </li>
+                <li class="portfolio-home__slider-item">
+                    <a class="portfolio-home__slider-item-hover" data-fancybox="portfolio" href="assets/images/portfolio/2.jpg"></a>
+                    <img class="portfolio-home__slider-img" src="assets/images/portfolio/2.jpg" alt="">
+                </li>
+                <li class="portfolio-home__slider-item">
+                    <a class="portfolio-home__slider-item-hover" data-fancybox="portfolio" href="assets/images/portfolio/3.jpg"></a>
+                    <img class="portfolio-home__slider-img" src="assets/images/portfolio/3.jpg" alt="">
+                </li>
+                <li class="portfolio-home__slider-item">
+                    <a class="portfolio-home__slider-item-hover" data-fancybox="portfolio" href="assets/images/portfolio/4.jpg"></a>
+                    <img class="portfolio-home__slider-img" src="assets/images/portfolio/4.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="about-home">
+        <div class="about-home__img-bg"></div>
+        <div class="about-home_center">
+            <h2 class="about-home__title">о студии</h2>
+            <img class="about-home__video" src="assets/images/poster.jpg" alt="">
+            <p class="about-home__txt1">Основным направлением нашей типографии является срочная печать полноцветной продукции и изготовление книг в мягком переплете.</p>
+            <p class="about-home__txt2">За время своей деятельности типография "Тираж" собрала коллектив профессионалов, имеющих опыт по созданию различной полиграфической продукции. Организация постоянно расширяет свою производственную и техническую базу. Мы используем современное
+                оборудование и программное обеспечение, которое позволяет качественно, оперативно и эффективно взаимодействовать с клиентами и выпускать продукцию высокого качества.
+                <a class="about-home__link" href="#">Читать подробнее</a>
+            </p>
+        </div>
+        <div class="about-home__map">
+            <div class="marker about-home__marker">
+                <img class="marker__facade" src="assets/images/facade.jpg" alt="" />
+                <p class="marker__name">Оперативная полиграфия &quot;Тираж&quot;</p>
+                <p class="marker__address">355042, г. Ставрополь,
+                    <br>ул. 50 лет ВЛКСМ, 24 б</p>
+                <img class="marker__img" src="assets/images/facade_marker.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="reviews-home">
+        <div class="reviews-home_center">
+            <div class="reviews-home__left">
+                <h2 class="reviews-home__title">отзывы клиентов</h2><i class="reviews-home__slider-prev"></i><i class="reviews-home__slider-next"></i>
+                <ul class="reviews-home__slider">
+                    <li class="reviews-home__slider-item">
+                        <div class="review">
+                            <p class="review__name">Фомин О. Е.</p>
+                            <img class="review__photo" src="assets/images/reviews/1.jpg" alt="" />
+                            <p class="review__post">Генеральный директор ОАО
+                                <br>«Мари-турекское ремонтно-техническое
+                                <br>предприятие»</p>
+                            <p class="review__txt"><i class="review__txt_before_quote"></i>За период нашей совместной работы Вы проявили себя очень надежным партнером. Высокая оперативность решения рабочих вопросов, а также своевременное выполнение обязательств.<i class="review__txt_after_quote"></i>
+                            </p>
+                            <p class="review__link-wrap">
+                                <img class="review__link-icon" src="assets/images/review_icon.png" alt="" /><a class="review__link" href="#">Оригинал отзыва</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="reviews-home__slider-item">
+                        <div class="review">
+                            <p class="review__name">Каренина А. Л.</p>
+                            <img class="review__photo" src="assets/images/reviews/2.jpg" alt="" />
+                            <p class="review__post">Генеральный директор ОАО «РЖД»</p>
+                            <p class="review__txt"><i class="review__txt_before_quote"></i>За период нашей совместной работы Вы проявили себя очень надежным партнером. Высокая оперативность решения рабочих вопросов, а также своевременное выполнение обязательств. Высокая оперативность
+                                решения рабочих вопросов, а также своевременное выполнение обязательств... <i class="review__txt_after_quote"></i>
+                            </p>
+                            <p class="review__link-wrap">
+                                <img class="review__link-icon" src="assets/images/review_icon.png" alt="" /><a class="review__link" href="#">Оригинал отзыва</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="reviews-home__slider-item">
+                        <div class="review">
+                            <p class="review__name">Мелехов Н. П.</p>
+                            <img class="review__photo" src="assets/images/reviews/3.jpg" alt="" />
+                            <p class="review__post">Главный менеджер ОАО «Ультрамарин»</p>
+                            <p class="review__txt"><i class="review__txt_before_quote"></i>За период нашей совместной работы Вы проявили себя очень надежным партнером. Высокая оперативность решения рабочих вопросов, а также своевременное выполнение обязательств. Высокая оперативность
+                                решения рабочих вопросов, а также своевременное выполнение обязательств... <i class="review__txt_after_quote"></i>
+                            </p>
+                            <p class="review__link-wrap">
+                                <img class="review__link-icon" src="assets/images/review_icon.png" alt="" /><a class="review__link" href="#">Оригинал отзыва</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="more-btn reviews-home__more" type="button">Все отзывы</button>
+            </div>
+            <div class="reviews-home__right">
+                <h2 class="news-home__title">новости</h2><i class="news-home__slider-prev"></i><i class="news-home__slider-next"></i>
+                <ul class="news-home__slider">
+                    <li class="news-home__slider-item">
+                        <a class="new" href="news-detail.html">
+                            <div class="new__hover"></div>
+                            <img class="new__img" src="assets/images/news/1.jpg" alt="" />
+                            <p class="new__date">27.01.2017</p>
+                            <p class="new__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </li>
+                    <li class="news-home__slider-item">
+                        <a class="new" href="news-detail.html">
+                            <div class="new__hover"></div>
+                            <img class="new__img" src="assets/images/news/1.jpg" alt="" />
+                            <p class="new__date">27.01.2017</p>
+                            <p class="new__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </a>
+                    </li>
+                </ul>
+                <button class="more-btn news-home__more" type="button">Все новости</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_center">
+            <div class="footer__item">
+                <a class="footer__logo" href="index.html">
+                    <p class="footer__logo-txt1">ТИРАЖ</p>
+                    <p class="footer__logo-txt2">Оперативная полиграфия, © 2012 — 2017</p>
+                </a>
+                <div class="footer__address">
+                    <p class="footer__address-txt1">Адрес:</p>
+                    <p class="footer__address-txt2">355042, г. Ставрополь, ул. 50 лет ВЛКСМ, 24 б</p>
+                </div>
+                <div class="footer__phone">
+                    <p class="footer__phone-txt1">Телефоны:</p>
+                    <p class="footer__phone-txt2"><span class="footer__phone-txt2_orange">+7 (8652)</span>72-11-21,&nbsp;&nbsp;72-47-73,&nbsp;&nbsp;31-53-97</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__timetable">График работы</div>
+                <div class="footer__get-order">
+                    <p class="footer__get-order-txt1">Прием заказов:</p>
+                    <p class="footer__get-order-txt2">пн.-пт.: с 9:00 до 18:00 (без перерыва)
+                        <br>сб.-вс.: выходной</p>
+                </div>
+                <div class="footer__set-order">
+                    <p class="footer__set-order-txt1">Выдача заказов:</p>
+                    <p class="footer__set-order-txt2">пн.-пт.: с 8:00 до 19:00 (без перерыва)
+                        <br>сб.: с 8:00 до 19:00 (перерыв c 13:00 до 14:00)
+                        <br>вс.: выходной</p>
+                </div>
+            </div>
+            <div class="footer__item footer__item-3">
+                <div class="footer__subs">
+                    <p class="footer__subs-title">Подпишись на новости</p>
+                    <form class="footer__subs-form" action="#" method="post">
+                        <input class="footer__subs-input" type="email" name="email" placeholder="Ваш E-mail">
+                        <button class="footer__subs-button" type="button">
+                            <img class="footer__subs-icon" src="assets/images/thick.png" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__pay">
+                    <p class="footer__pay-title">Online-оплата</p>
+                    <div class="footer__pay-icons">
+                        <a class="footer__pay-link footer__pay-visa" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/visa.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-mastercard" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/mastercard.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-yandex" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/yandex.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-sberbank" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/sberbank.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item footer__item-4">
+                <div class="footer__soc">
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/vk.png" alt="">
+                    </a>
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/fb.png" alt="">
+                    </a>
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/tw.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__note">Информация на не является публичной офертой. Указанные цены действуют только при оформлении заказа через интернет-магазин</div>
+                <div class="footer__author">Создание сайта<a class="footer__author-link" href="#">Технологии Успеха</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright_center">
+            <p class="copyright__txt">© 2017, Индивидуальный предприниматель Руденко Александр Валерьевич., ИНН 111111111, КПП 222222222, ОГРН 3333333333</p>
+        </div>
+    </div>
+    <div class="widjet"><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">Личный кабинет</div><img class="widjet__icon" src="assets/images/widjet/1.png" alt=""></a><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">В корзине 3 товара</div><img class="widjet__icon" src="assets/images/widjet/2.png" alt=""></a>
+        <a
+        class="widjet__link" href="#"><span class="widjet__elem-bg"></span>
+            <div class="widjet__hover">Калькулятор</div>
+            <img class="widjet__icon" src="assets/images/widjet/3.png" alt="">
+            </a><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">Мобильная версия</div><img class="widjet__icon" src="assets/images/widjet/4.png" alt=""></a><a class="widjet__link" href="#header"><span class="widjet__elem-bg"></span><div class="widjet__hover">Вверх</div><img class="widjet__icon" src="assets/images/widjet/5.png" alt=""></a>
+    </div>
+    <div class="popup">
+        <div class="popup__bg"></div>
+        <div class="popup__content">
+            <img class="popup__close" src="assets/images/close.png" alt="">
+            <h2 class="popup__title">Обратный звонок</h2>
+            <form class="popup__form" action="#" method="post">
+                <input class="input" type="text" name="name" placeholder="Как вас зовут?" />
+                <input class="input" type="text" name="phone" placeholder="Ваш номер телефона" />
+                <button class="orange-btn" type="button">заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/scripts/jquery-1.12.4.min.js"></script>
+    <script src="assets/scripts/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/jquery.slicknav.min.js"></script>
+    <script src="assets/scripts/jquery.bxslider.min.js"></script>
+    <script src="assets/scripts/jquery.slides.min.js"></script>
+    <script src="assets/scripts/dm-tabs.js"></script>
+    <script src="assets/scripts/jquery.mousewheel.js"></script>
+    <script src="assets/scripts/jquery.jscrollpane.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

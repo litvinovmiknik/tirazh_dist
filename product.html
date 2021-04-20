@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Карточка товара</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="daikonar">
+    <link rel="stylesheet" href="assets/styles/slicknav.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/styles/tabs-style.css">
+    <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/styles/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="assets/styles/app.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="navbar">
+            <div class="navbar_center">
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="about.html">О студии</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="news.html">Новости</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="calc-list.html">Расчет стоимости</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul><a class="cabinet-btn" href="cabinet.html">Личный кабинет</a>
+                <form class="search" action="#" method="get">
+                    <input class="search__input" type="text" name="words" placeholder="Поиск">
+                    <button class="search__button" type="button"></button>
+                </form>
+            </div>
+        </div>
+        <div class="logobar">
+            <div class="logobar_center">
+                <a class="logo__link" href="index.html">
+                    <img class="logo" src="assets/images/logo.png" alt="">
+                </a>
+                <a class="bascket-mini" href="bascket.html">
+                    <p class="bascket-mini__icon-wrap"><span class="bascket-mini__icon"></span>
+                    </p><span class="bascket-mini__count">31</span>
+                    <p class="bascket-mini__name">корзина</p>
+                    <p class="bascket-mini__cost"><span class="bascket-mini__cost_orange">7 590</span>руб.</p>
+                </a>
+                <div class="phone">
+                    <p class="phone__number"><span class="phone__number_orange">+7&nbsp;&nbsp;8652</span>72-47-73</p>
+                    <p class="phone__number"><span class="phone__number_orange">+7&nbsp;&nbsp;8652</span>31-53-11</p>
+                </div>
+                <img class="phone__icon" src="assets/images/phone_icon.png" alt="">
+                <button class="callback-btn" type="button">заказать звонок</button>
+                <div class="address">
+                    <img class="address__icon" src="assets/images/address_icon.png" alt="">
+                    <p class="address__txt">355042, г. Ставрополь,
+                        <br>ул. 50 лет ВЛКСМ, 24 б</p>
+                </div>
+            </div>
+        </div>
+        <div class="products-nav">
+            <div class="products-nav_center">
+                <ul class="products-nav__list">
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">визитки</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">листовки и буклеты</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">каталоги и брошюры</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">книжная продукция</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">календари</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">сувенирная продукция</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">фотоальбомы и дипломы</a>
+                    </li>
+                    <li class="products-nav__item"><a class="products-nav__link" href="catalog.html">пластиковые карты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_center">
+            <div class="card-product">
+                <div class="breadcrumbs"><a class="breadcrumbs__link" href="#">Главная</a><span class="breadcrumbs__sep">></span><a class="breadcrumbs__link" href="#">Каталог</a><span class="breadcrumbs__sep">></span><a class="breadcrumbs__link" href="#">Визитки</a><span class="breadcrumbs__sep">></span>
+                    <span
+                    class="breadcrumbs__cur">Цифровая печать визиток</span>
+                </div>
+                <h2 class="card-product__title">цифровая печать визиток</h2>
+                <div class="card-product__left">
+                    <ul class="card-product__slider">
+                        <li class="card-product__slider-item">
+                            <a class="card-product__slider-hover" data-fancybox="card-product" href="assets/images/card-product/1.jpg"></a>
+                            <img class="card-product__slider-img" src="assets/images/card-product/1.jpg">
+                        </li>
+                        <li class="card-product__slider-item">
+                            <a class="card-product__slider-hover" data-fancybox="card-product" href="assets/images/card-product/1.jpg"></a>
+                            <img class="card-product__slider-img" src="assets/images/card-product/1.jpg">
+                        </li>
+                        <li class="card-product__slider-item">
+                            <a class="card-product__slider-hover" data-fancybox="card-product" href="assets/images/card-product/1.jpg"></a>
+                            <img class="card-product__slider-img" src="assets/images/card-product/1.jpg">
+                        </li>
+                        <li class="card-product__slider-item">
+                            <a class="card-product__slider-hover" data-fancybox="card-product" href="assets/images/card-product/1.jpg"></a>
+                            <img class="card-product__slider-img" src="assets/images/card-product/1.jpg">
+                        </li>
+                    </ul>
+                    <div class="card-product__pager"><a class="card-product__pager-link" data-slide-index="0" href=""><span class="card-product__pager-link_active"></span><img class="card-product__pager-img" src="assets/images/card-product/1_thumb.jpg"></a><a class="card-product__pager-link"
+                        data-slide-index="1" href=""><span class="card-product__pager-link_active"></span><img class="card-product__pager-img" src="assets/images/card-product/2_thumb.jpg"></a>
+                        <a class="card-product__pager-link" data-slide-index="2" href=""><span class="card-product__pager-link_active"></span>
+                            <img class="card-product__pager-img" src="assets/images/card-product/3_thumb.jpg">
+                        </a><a class="card-product__pager-link" data-slide-index="3" href=""><span class="card-product__pager-link_active"></span><img class="card-product__pager-img" src="assets/images/card-product/4_thumb.jpg"></a>
+                    </div>
+                </div>
+                <div class="card-product__right">
+                    <div class="card-product__cost">
+                        <h3 class="card-product__cost-title">стоимость</h3>
+                        <div class="card-product__cost-item">
+                            <p class="card-product__cost-value">2.00 р.</p>
+                            <p class="card-product__cost-desc">за экземпляр</p>
+                        </div>
+                        <div class="card-product__cost-item">
+                            <p class="card-product__cost-value card-product__cost-value_orange">200.00 р.</p>
+                            <p class="card-product__cost-desc">сумма</p>
+                        </div>
+                    </div>
+                    <form class="card-products__form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="card-product__tabs tabs_block">
+                            <ul class="card-product__tabs-head tabs">
+                                <li class="card-product__tabs-head-item active">детали</li>
+                                <li class="card-product__tabs-head-item">подробно</li>
+                            </ul>
+                            <div class="card-product__tabs-box box visible">
+                                <div class="card-product__side">
+                                    <h4 class="title-small">Сторона</h4>
+                                    <div class="radio-btn card-product__side-radio">
+                                        <input type="radio" id="side-one" name="side" />
+                                        <label for="side-one">Односторонние</label>
+                                    </div>
+                                    <div class="radio-btn card-product__side-radio">
+                                        <input type="radio" id="side-two" name="side" />
+                                        <label for="side-two">Двухсторонние</label>
+                                    </div>
+                                </div>
+                                <div class="card-product__edition">
+                                    <h4 class="title-small">Тираж</h4>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-100" name="edition" />
+                                        <label for="ed-100">100</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-300" name="edition" />
+                                        <label for="ed-300">300</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-500" name="edition" />
+                                        <label for="ed-500">500</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-1000" name="edition" />
+                                        <label for="ed-1000">1000</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-1500" name="edition" />
+                                        <label for="ed-1500">1500</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-2000" name="edition" />
+                                        <label for="ed-2000">2000</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-2500" name="edition" />
+                                        <label for="ed-2500">2500</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-3000" name="edition" />
+                                        <label for="ed-3000">3000</label>
+                                    </div>
+                                    <div class="radio-btn card-product__edition-radio">
+                                        <input type="radio" id="ed-4000" name="edition" />
+                                        <label for="ed-4000">4000</label>
+                                    </div>
+                                </div>
+                                <div class="card-product__paper">
+                                    <h4 class="title-small">Бумага</h4>
+                                    <div class="card-product__paper-radio-wrap">
+                                        <div class="radio card-product__paper-radio">
+                                            <input type="radio" id="paper1" name="paper" />
+                                            <label for="paper1">Мелованная бумага</label>
+                                        </div>
+                                        <div class="radio card-product__paper-radio">
+                                            <input type="radio" id="paper2" name="paper" />
+                                            <label for="paper2">Color Copy 300 г/м2</label>
+                                        </div>
+                                        <div class="radio card-product__paper-radio">
+                                            <input type="radio" id="paper3" name="paper" />
+                                            <label for="paper3">Фактурная</label>
+                                        </div>
+                                        <div class="radio card-product__paper-radio">
+                                            <input type="radio" id="paper4" name="paper" />
+                                            <label for="paper4">Металлизированная</label>
+                                        </div>
+                                        <div class="radio card-product__paper-radio">
+                                            <input type="radio" id="paper5" name="paper" />
+                                            <label for="paper5">Galaxy Metallic</label>
+                                        </div>
+                                        <div class="radio card-product__paper-radio">
+                                            <input type="radio" id="paper6" name="paper" />
+                                            <label for="paper6">Touche Cover</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-product__paper-color">
+                                    <h4 class="title-small">Цветность бумаги</h4>
+                                    <div class="card-product__paper-color-wrap">
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color1" name="color" />
+                                            <label for="color1" style="background-image: url('assets/images/paper-color/1.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color2" name="color" />
+                                            <label for="color2" style="background-image: url('assets/images/paper-color/2.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color3" name="color" />
+                                            <label for="color3" style="background-image: url('assets/images/paper-color/3.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color4" name="color" />
+                                            <label for="color4" style="background-image: url('assets/images/paper-color/4.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color5" name="color" />
+                                            <label for="color5" style="background-image: url('assets/images/paper-color/5.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color6" name="color" />
+                                            <label for="color6" style="background-image: url('assets/images/paper-color/6.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color7" name="color" />
+                                            <label for="color7" style="background-image: url('assets/images/paper-color/7.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color8" name="color" />
+                                            <label for="color8" style="background-image: url('assets/images/paper-color/8.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color9" name="color" />
+                                            <label for="color9" style="background-image: url('assets/images/paper-color/9.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color10" name="color" />
+                                            <label for="color10" style="background-image: url('assets/images/paper-color/10.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color11" name="color" />
+                                            <label for="color11" style="background-image: url('assets/images/paper-color/11.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color12" name="color" />
+                                            <label for="color12" style="background-image: url('assets/images/paper-color/12.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color13" name="color" />
+                                            <label for="color13" style="background-image: url('assets/images/paper-color/13.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color14" name="color" />
+                                            <label for="color14" style="background-image: url('assets/images/paper-color/14.png');"></label>
+                                        </div>
+                                        <div class="radio-color card-product__paper-color-item">
+                                            <input type="radio" id="color15" name="color" />
+                                            <label for="color15" style="background-image: url('assets/images/paper-color/15.png');"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-product__upload"><span class="card-product__upload-status" id="file-name">Файл не выбран</span>
+                                    <label class="card-product__upload-btn">
+                                        <input name="file" type="file" onchange="getFileName();" id="uploaded-file"><span>Загрузить свой макет</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="card-product__tabs-box box">
+                                <table class="card-product__table">
+                                    <tr class="card-product__row">
+                                        <th class="card-product__th">Тираж</th>
+                                        <th class="card-product__th">Односторонние</th>
+                                        <th class="card-product__th">Двухсторонние</th>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">100</td>
+                                        <td class="card-product__cell">2.00 р.</td>
+                                        <td class="card-product__cell">2.00 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">300</td>
+                                        <td class="card-product__cell">1.50 р.</td>
+                                        <td class="card-product__cell">1.50 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">500</td>
+                                        <td class="card-product__cell">1.20 р.</td>
+                                        <td class="card-product__cell">1.20 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">1000</td>
+                                        <td class="card-product__cell">1.10 р.</td>
+                                        <td class="card-product__cell">1.10 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">1500</td>
+                                        <td class="card-product__cell">1.00 р.</td>
+                                        <td class="card-product__cell">1.00 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">2000</td>
+                                        <td class="card-product__cell">0.95 р.</td>
+                                        <td class="card-product__cell">0.95 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">2500</td>
+                                        <td class="card-product__cell">0.90 р.</td>
+                                        <td class="card-product__cell">0.90 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">3000</td>
+                                        <td class="card-product__cell">0.85 р.</td>
+                                        <td class="card-product__cell">0.85 р.</td>
+                                    </tr>
+                                    <tr class="card-product__row">
+                                        <td class="card-product__cell">4000</td>
+                                        <td class="card-product__cell">0.80 р.</td>
+                                        <td class="card-product__cell">0.80 р.</td>
+                                    </tr>
+                                </table>
+                                <p class="card-product__note"><span class="card-product__note_orange">Примечание.</span> При печати визиток на дизайнерских бумагах к стоимости добавляется цена выбранного типа бумаги</p>
+                            </div>
+                        </div>
+                        <div class="card-product__buttons">
+                            <button class="orange-btn card-product__order-btn" type="button">заказать</button>
+                            <button class="more-btn card-product__one-click" type="button">купить в один клик</button>
+                        </div>
+                        <div class="card-product__guarantee">
+                            <p class="card-product__guarantee-txt1">гарантия лучшей цены!</p>
+                            <p class="card-product__guarantee-txt2">найдете дешевле, вернем разницу<span class="card-product__guarantee-txt2_orange">*</span>
+                            </p><span class="card-product__guarantee-link_orange">*</span><a class="card-product__guarantee-link" href="#">правила акции</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="material-product">
+        <div class="material-product_center">
+            <div class="material-product__left">
+                <h3 class="title-mid">материал</h3>
+                <p class="material-product__txt1">Мелованная бумага, дизайнерские сорта бумаги с тиснением (Prestige, Verona), металлизированным (Sirio Pearl, Shyne, Galaxy Metallic) и латексным напылением (Touche Cover). Плотность используемой бумаги - 80-300 г/м2</p>
+                <p class="material-product__note"><span class="material-product__note_bold">Примечание.</span> При печати визиток на дизайнерских бумагах к стоимости добавляется цена выбранного типа бумаги:</p>
+                <ol class="material-product__list">
+                    <li class="material-product__item">Color Copy 300 г/м2 - 0.35 руб.</li>
+                    <li class="material-product__item">Фактурные (Prestige, Verona и т.п.) - 0.90 руб.</li>
+                    <li class="material-product__item">Металлизированные (Sirio Pearl, Shyne и т.п.) - 2.30 руб.</li>
+                    <li class="material-product__item">Металлизированная (Galaxy Metallic) - 0.90 руб.</li>
+                    <li class="material-product__item">Touche Cover - 3.30 руб.</li>
+                </ol>
+                <h3 class="title-mid material-product__prod-time-title">Срок изготовления</h3>
+                <p class="material-product__txt2">По согласованию с заказчиком от 30 минут до 12 часов. Технически мы способны изготовить 1000 односторонних визитных карточек за 30 минут (!) - от раскладки макета до упакованной продукции.</p>
+            </div>
+            <div class="material-product__right">
+                <h3 class="title-mid">видеоматерил</h3>
+                <img class="material-product__video" src="assets/images/poster.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content_center">
+            <div class="watched">
+                <h2 class="title-big watched__title">вы смотрели</h2>
+                <a class="catalog__item" href="product.html">
+                    <p class="catalog__name">цифровая печать визиток</p>
+                    <img class="catalog__img" src="assets/images/catalog/1.jpg" />
+                    <p class="catalog__cost">200.00 р.</p>
+                    <p class="catalog__count">100 шт.</p>
+                    <p class="catalog__type">односторонние</p>
+                    <button class="orange-btn catalog__button" type="button">подробнее</button>
+                </a>
+                <a class="catalog__item" href="product.html">
+                    <p class="catalog__name">цифровая печать визиток</p>
+                    <img class="catalog__img" src="assets/images/catalog/2.jpg" />
+                    <p class="catalog__cost">250.00 р.</p>
+                    <p class="catalog__count">100 шт.</p>
+                    <p class="catalog__type">двухстронние</p>
+                    <button class="orange-btn catalog__button" type="button">подробнее</button>
+                </a>
+                <a class="catalog__item" href="product.html">
+                    <p class="catalog__name">фольгирование визиток</p>
+                    <img class="catalog__img" src="assets/images/catalog/3.jpg" />
+                    <p class="catalog__cost">480.00 р.</p>
+                    <p class="catalog__count">100 шт.</p>
+                    <p class="catalog__type">односторонние</p>
+                    <button class="orange-btn catalog__button" type="button">подробнее</button>
+                </a>
+                <a class="catalog__item" href="product.html">
+                    <p class="catalog__name">тиснение визиток</p>
+                    <img class="catalog__img" src="assets/images/catalog/4.jpg" />
+                    <p class="catalog__cost">1300.00 р.</p>
+                    <p class="catalog__count">100 шт.</p>
+                    <p class="catalog__type">односторонние</p>
+                    <button class="orange-btn catalog__button" type="button">подробнее</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_center">
+            <div class="footer__item">
+                <a class="footer__logo" href="index.html">
+                    <p class="footer__logo-txt1">ТИРАЖ</p>
+                    <p class="footer__logo-txt2">Оперативная полиграфия, © 2012 — 2017</p>
+                </a>
+                <div class="footer__address">
+                    <p class="footer__address-txt1">Адрес:</p>
+                    <p class="footer__address-txt2">355042, г. Ставрополь, ул. 50 лет ВЛКСМ, 24 б</p>
+                </div>
+                <div class="footer__phone">
+                    <p class="footer__phone-txt1">Телефоны:</p>
+                    <p class="footer__phone-txt2"><span class="footer__phone-txt2_orange">+7 (8652)</span>72-11-21,&nbsp;&nbsp;72-47-73,&nbsp;&nbsp;31-53-97</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__timetable">График работы</div>
+                <div class="footer__get-order">
+                    <p class="footer__get-order-txt1">Прием заказов:</p>
+                    <p class="footer__get-order-txt2">пн.-пт.: с 9:00 до 18:00 (без перерыва)
+                        <br>сб.-вс.: выходной</p>
+                </div>
+                <div class="footer__set-order">
+                    <p class="footer__set-order-txt1">Выдача заказов:</p>
+                    <p class="footer__set-order-txt2">пн.-пт.: с 8:00 до 19:00 (без перерыва)
+                        <br>сб.: с 8:00 до 19:00 (перерыв c 13:00 до 14:00)
+                        <br>вс.: выходной</p>
+                </div>
+            </div>
+            <div class="footer__item footer__item-3">
+                <div class="footer__subs">
+                    <p class="footer__subs-title">Подпишись на новости</p>
+                    <form class="footer__subs-form" action="#" method="post">
+                        <input class="footer__subs-input" type="email" name="email" placeholder="Ваш E-mail">
+                        <button class="footer__subs-button" type="button">
+                            <img class="footer__subs-icon" src="assets/images/thick.png" alt="">
+                        </button>
+                    </form>
+                </div>
+                <div class="footer__pay">
+                    <p class="footer__pay-title">Online-оплата</p>
+                    <div class="footer__pay-icons">
+                        <a class="footer__pay-link footer__pay-visa" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/visa.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-mastercard" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/mastercard.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-yandex" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/yandex.png" alt="">
+                        </a>
+                        <a class="footer__pay-link footer__pay-sberbank" href="#">
+                            <img class="footer__pay-icon" src="assets/images/pay/sberbank.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__item footer__item-4">
+                <div class="footer__soc">
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/vk.png" alt="">
+                    </a>
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/fb.png" alt="">
+                    </a>
+                    <a class="footer__soc-link" href="#">
+                        <img class="footer__soc-icon" src="assets/images/soc/tw.png" alt="">
+                    </a>
+                </div>
+                <div class="footer__note">Информация на не является публичной офертой. Указанные цены действуют только при оформлении заказа через интернет-магазин</div>
+                <div class="footer__author">Создание сайта<a class="footer__author-link" href="#">Технологии Успеха</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright_center">
+            <p class="copyright__txt">© 2017, Индивидуальный предприниматель Руденко Александр Валерьевич., ИНН 111111111, КПП 222222222, ОГРН 3333333333</p>
+        </div>
+    </div>
+    <div class="widjet"><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">Личный кабинет</div><img class="widjet__icon" src="assets/images/widjet/1.png" alt=""></a><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">В корзине 3 товара</div><img class="widjet__icon" src="assets/images/widjet/2.png" alt=""></a>
+        <a
+        class="widjet__link" href="#"><span class="widjet__elem-bg"></span>
+            <div class="widjet__hover">Калькулятор</div>
+            <img class="widjet__icon" src="assets/images/widjet/3.png" alt="">
+            </a><a class="widjet__link" href="#"><span class="widjet__elem-bg"></span><div class="widjet__hover">Мобильная версия</div><img class="widjet__icon" src="assets/images/widjet/4.png" alt=""></a><a class="widjet__link" href="#header"><span class="widjet__elem-bg"></span><div class="widjet__hover">Вверх</div><img class="widjet__icon" src="assets/images/widjet/5.png" alt=""></a>
+    </div>
+    <div class="popup">
+        <div class="popup__bg"></div>
+        <div class="popup__content">
+            <img class="popup__close" src="assets/images/close.png" alt="">
+            <h2 class="popup__title">Обратный звонок</h2>
+            <form class="popup__form" action="#" method="post">
+                <input class="input" type="text" name="name" placeholder="Как вас зовут?" />
+                <input class="input" type="text" name="phone" placeholder="Ваш номер телефона" />
+                <button class="orange-btn" type="button">заказать звонок</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/scripts/jquery-1.12.4.min.js"></script>
+    <script src="assets/scripts/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/jquery.slicknav.min.js"></script>
+    <script src="assets/scripts/jquery.bxslider.min.js"></script>
+    <script src="assets/scripts/jquery.slides.min.js"></script>
+    <script src="assets/scripts/dm-tabs.js"></script>
+    <script src="assets/scripts/jquery.mousewheel.js"></script>
+    <script src="assets/scripts/jquery.jscrollpane.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>
